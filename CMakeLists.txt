@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.14)
 project(QtProtobufBug LANGUAGES CXX)
 
+find_package(Protobuf REQUIRED)
 find_package(Qt6 REQUIRED COMPONENTS Core Protobuf)
 
 # QtProtobuf

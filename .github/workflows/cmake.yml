@@ -16,7 +16,7 @@ jobs:
       - name: install dependencies
         uses: johnwason/vcpkg-action@v6
         with:
-          pkgs: qtbase protobuf
+          pkgs: qtbase qtgrpc protobuf
           triplet: x64-windows-release
           token: ${{ github.token }}
           github-binarycache: true

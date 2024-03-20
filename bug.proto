@@ -4,3 +4,15 @@ message MyMessage {
     required string name = 1;
     required string template = 2;
 }
+
+enum Format {
+    lowercase = 0;
+    UPPERCASE = 1;
+    camelCase = 2;
+    PascalCase = 3;
+    snake_case = 4;
+}
+
+message FormattedMsg {
+    required Format format = 1 [default = lowercase];
+}
